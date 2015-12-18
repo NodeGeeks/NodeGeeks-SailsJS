@@ -20,6 +20,10 @@ module.exports = {
         size: {
             type: 'integer'
         }
+    },
+
+    beforeCreate: function(values, cb) {
+
     }
 };
 

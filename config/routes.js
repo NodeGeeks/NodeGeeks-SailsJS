@@ -32,7 +32,17 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  'GET /login': 'AuthController.login',
+  'POST /login': 'AuthController.login',
+
+  'POST /validate': 'AuthController.validate',
+
+  'POST /resetPassword': 'AuthController.resetPassword',
+
+  'GET /recoverPassword': 'AuthController.recoverPassword',
+
+  'POST /activate': 'AuthController.activate',
+
+  'GET /chart/data': 'ChartController.gatherData',
 
   /***************************************************************************
   *                                                                          *

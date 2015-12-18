@@ -134,6 +134,7 @@ function HTMLEmailTemplate(body) {
 
 module.exports = {
     send: function (subject, body, to) {
+
         var transport = nodemailer.createTransport(directTransport({
             name: global.app.domain,
             debug: false

@@ -48,4 +48,7 @@ module.exports.policies = {
 		// before letting any users feed our rabbits
 		// feed : ['isNiceToAnimals', 'hasRabbitFood']
 	// }
+
+  //todo: create a policy that protects the same id from making multiple requests to secure things like forgot passwords, login attempts etc...
+  //todo: create isAuthenticated(*), hasAccess, isOwner, isAdmin, canUpload etc...
 };

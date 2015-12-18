@@ -57,6 +57,10 @@ module.exports = {
             type: 'string'
         },
 
+        resetPasswordHash: {
+            type: 'string'
+        },
+
         isActive: {
             type: 'boolean',
             defaultsTo: false
@@ -109,6 +113,9 @@ module.exports = {
     toJSON: function() {
         var obj = this.toObject();
         delete obj.password;
+        delete obj.token;
+        delete obj.createdAt;
+        delete obj.updatedAt;
         return obj;
     }
 };

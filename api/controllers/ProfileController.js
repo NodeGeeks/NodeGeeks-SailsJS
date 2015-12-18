@@ -7,9 +7,5 @@
 
 module.exports = {
 
-    login: function(req, res) {
-        Auth.login(req, res);
-    }
-	
 };
 

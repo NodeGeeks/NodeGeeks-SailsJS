@@ -58,11 +58,11 @@ module.exports.connections = {
   ***************************************************************************/
   mongoDbServer: {
     adapter: 'sails-mongo',
-    host: '96.93.198.170',
+    host: '127.0.0.1',
     port: 27017,
-    user: 'academy',
-    password: 'S0l4r3n3rgy#',
-    database: 'nodegeeks-academy'
+    user: 'local',
+    password: 'password',
+    database: 'APP_NAME'
   },
 
   /***************************************************************************
